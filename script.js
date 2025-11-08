@@ -3,70 +3,7 @@ class KarunexStore {
     constructor() {
         this.cart = JSON.parse(localStorage.getItem('karunex-cart')) || [];
         this.products = [
-            {
-                id: 1,
-                name: "Office Desktop Computer",
-                price: 65000,
-                image: "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=400&h=300&fit=crop",
-                category: "electronics",
-                description: "High-performance desktop for office use"
-            },
-            {
-                id: 2,
-                name: "Laptop Stand",
-                price: 2500,
-                image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
-                category: "office",
-                description: "Adjustable aluminum laptop stand"
-            },
-            {
-                id: 3,
-                name: "Wireless Keyboard & Mouse",
-                price: 3500,
-                image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=300&fit=crop",
-                category: "electronics",
-                description: "Ergonomic wireless combo"
-            },
-            {
-                id: 4,
-                name: "Office Chair",
-                price: 12000,
-                image: "https://images.unsplash.com/photo-1586953983827-b6632c8a71aa?w=400&h=300&fit=crop",
-                category: "office",
-                description: "Executive office chair with lumbar support"
-            },
-            {
-                id: 5,
-                name: "Water Purifier",
-                price: 18000,
-                image: "https://images.unsplash.com/photo-1544003484-3cd181d179c4?w=400&h=300&fit=crop",
-                category: "home",
-                description: "RO+UV water purification system"
-            },
-            {
-                id: 6,
-                name: "Air Conditioner",
-                price: 55000,
-                image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop",
-                category: "home",
-                description: "1.5 Ton Inverter AC"
-            },
-            {
-                id: 7,
-                name: "Document Scanner",
-                price: 15000,
-                image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=400&h=300&fit=crop",
-                category: "office",
-                description: "High-speed document scanner"
-            },
-            {
-                id: 8,
-                name: "Microwave Oven",
-                price: 8500,
-                image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=300&fit=crop",
-                category: "home",
-                description: "20L convection microwave"
-            }
+            // ... your existing products array
         ];
         
         this.currentFilter = 'all';
@@ -105,10 +42,7 @@ class KarunexStore {
         this.currentFilter = category;
         this.displayProducts(category);
         
-        // Update active filter button
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.classList.remove('active');
-        });
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
         event.target.classList.add('active');
     }
 
@@ -119,10 +53,7 @@ class KarunexStore {
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
-            this.cart.push({
-                ...product,
-                quantity: 1
-            });
+            this.cart.push({...product, quantity: 1});
         }
         
         this.saveCart();
@@ -159,7 +90,6 @@ class KarunexStore {
         cartItems.innerHTML = this.cart.map(item => {
             const itemTotal = item.price * item.quantity;
             total += itemTotal;
-            
             return `
                 <div class="cart-item">
                     <div class="cart-item-info">
@@ -183,20 +113,12 @@ class KarunexStore {
     }
 
     showNotification(message) {
-        // Create notification
         const notification = document.createElement('div');
         notification.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background: #2c5aa0;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            z-index: 10000;
-            animation: slideIn 0.3s ease;
-            font-weight: 500;
+            position: fixed; top: 100px; right: 20px;
+            background: #2c5aa0; color: white; padding: 1rem 2rem;
+            border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 10000; animation: slideIn 0.3s ease; font-weight: 500;
         `;
         notification.textContent = message;
         document.body.appendChild(notification);
@@ -213,30 +135,16 @@ class KarunexStore {
             return;
         }
 
+        // Save cart & total to localStorage
+        localStorage.setItem('cart', JSON.stringify(this.cart));
         const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        
-        // Show order confirmation
-        this.showNotification("📦 Processing your order...");
-        
-        setTimeout(() => {
-            const orderDetails = this.cart.map(item => 
-                `${item.name} (Qty: ${item.quantity}) - NPR ${(item.price * item.quantity).toLocaleString('en-NP')}`
-            ).join('\n');
-            
-            const customerMessage = `Thank you for choosing Karunex Co.! Our sales team will contact you within 24 hours to confirm your order and arrange delivery.`;
-            
-            alert(`🎉 Order Received!\n\nOrder Details:\n${orderDetails}\n\nTotal: NPR ${total.toLocaleString('en-NP')}\n\n${customerMessage}`);
-            
-            // Clear cart after successful order
-            this.cart = [];
-            this.saveCart();
-            this.updateCartCount();
-            this.displayCartItems();
-        }, 2000);
+        localStorage.setItem('total', total);
+
+        // Redirect to checkout page with payment options
+        window.location.href = "checkout.html";
     }
 
     setupEventListeners() {
-        // Contact form submission
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', (e) => {
@@ -246,58 +154,43 @@ class KarunexStore {
             });
         }
 
-        // Smooth scrolling
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if (targetId.startsWith('#')) {
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
+
+        // Cart checkout button now redirects to checkout page
+        const checkoutBtn = document.getElementById("payment-button");
+        if (checkoutBtn) {
+            checkoutBtn.addEventListener('click', () => this.checkout());
+        }
     }
 }
 
 // Global functions
 function scrollToProducts() {
-    document.getElementById('products').scrollIntoView({
-        behavior: 'smooth'
-    });
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
 }
 
 function filterProducts(category) {
     karunexStore.filterProducts(category);
 }
 
-function checkout() {
-    karunexStore.checkout();
-}
-
 // Add CSS animations
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
     }
     @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
     }
 `;
 document.head.appendChild(style);
