@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karunex Co. - Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://khalti.com/static/khalti-checkout.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            <textarea id="address" placeholder="Shipping Address" rows="4" required></textarea>
+
+            <h3>Order Summary</h3>
+            <div id="orderSummary"></div>
+            <h3>Total: NPR <span id="totalAmount">0</span></h3>
+
+            <button type="button" id="payment-button">Pay with Khalti</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
