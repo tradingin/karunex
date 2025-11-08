@@ -1,2 +1,0 @@
-# karunex
-ecommerce website
