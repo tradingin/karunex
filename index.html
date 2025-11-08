@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>🏢 Karunex Co.</h1>
+                <img src="logo.png" alt="Karunex Co. Logo" class="logo-img">
                 <span class="tagline">Quality You Can Trust</span>
             </div>
             <nav class="nav">
@@ -136,7 +136,7 @@
             </div>
             <div class="cart-total">
                 <h3>Total: NPR <span id="totalAmount">0</span></h3>
-                <button class="checkout-btn" onclick="checkout()">Place Order</button>
+                <button id="payment-button" class="checkout-btn">Pay with Khalti</button>
             </div>
         </div>
     </section>
@@ -177,6 +177,56 @@
         </div>
     </footer>
 
+    <!-- JS Files -->
     <script src="script.js"></script>
+
+    <!-- Khalti Payment Integration -->
+    <script src="https://khalti.com/static/khalti-checkout.js"></script>
+    <script>
+        var config = {
+            "publicKey": "test_public_key_dc74efdf8c1d47beb6e...", // replace with your actual public key
+            "productIdentity": "KarunexOrder01",
+            "productName": "Karunex Order",
+            "productUrl": "https://yourwebsite.com",
+            "eventHandler": {
+                onSuccess(payload) {
+                    alert("✅ Payment successful! Thank you for shopping with Karunex Co.");
+                    console.log(payload);
+                },
+                onError(error) {
+                    console.log(error);
+                    alert("❌ Payment failed. Please try again.");
+                },
+                onClose() {
+                    console.log('Khalti checkout widget is closing.');
+                }
+            }
+        };
+        var checkout = new KhaltiCheckout(config);
+        var btn = document.getElementById("payment-button");
+        btn.onclick = function () {
+            var totalAmount = parseInt(document.getElementById("totalAmount").innerText);
+            if (totalAmount > 0) {
+                checkout.show({ amount: totalAmount * 100 }); // Khalti expects paisa
+            } else {
+                alert("Your cart is empty.");
+            }
+        }
+    </script>
+
+    <!-- Logo Styling -->
+    <style>
+        .logo-img {
+            height: 60px;
+            width: auto;
+            vertical-align: middle;
+        }
+        .logo .tagline {
+            display: block;
+            font-size: 14px;
+            color: #777;
+            margin-top: 5px;
+        }
+    </style>
 </body>
 </html>
