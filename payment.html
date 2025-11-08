@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karunex Co. - Payment</title>
+    <title>Karunex Co. - Checkout</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://khalti.com/static/khalti-checkout.js"></script>
 </head>
@@ -20,10 +20,15 @@
             <div id="orderSummary"></div>
             <h3>Total: NPR <span id="totalAmount">0</span></h3>
 
-            <button type="button" id="payment-button">Pay with Khalti</button>
+            <h3>Payment Options</h3>
+            <div class="payment-options">
+                <button type="button" id="khalti-button">Pay with Khalti</button>
+                <button type="button" id="esewa-button">Pay with eSewa</button>
+                <button type="button" id="cod-button">Cash on Delivery</button>
+            </div>
         </form>
     </div>
 
-    <script src="payment.js"></script>
+    <script src="checkout.js"></script>
 </body>
 </html>
