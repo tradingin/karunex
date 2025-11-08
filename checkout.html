@@ -1,0 +1,73 @@
+// Load cart and total from localStorage
+const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+const totalAmount = localStorage.getItem("total") || 0;
+document.getElementById("totalAmount").innerText = totalAmount;
+
+// Display order summary
+const summaryDiv = document.getElementById("orderSummary");
+if(cartItems.length === 0){
+    summaryDiv.innerText = "Your cart is empty.";
+} else {
+    cartItems.forEach(item => {
+        const p = document.createElement("p");
+        p.innerText = `${item.name} x ${item.quantity} - NPR ${item.price * item.quantity}`;
+        summaryDiv.appendChild(p);
+    });
+}
+
+// ------------------ Khalti Checkout ------------------
+var khaltiConfig = {
+    "publicKey": "test_public_key_dc74efdf8c1d47beb6e...", // replace with live key
+    "productIdentity": "KarunexOrder01",
+    "productName": "Karunex Order",
+    "productUrl": "https://yourwebsite.com",
+    "eventHandler": {
+        onSuccess(payload) {
+            alert("✅ Payment successful via Khalti! Thank you for shopping with Karunex Co.");
+            clearCart();
+        },
+        onError(error) {
+            console.log(error);
+            alert("❌ Khalti payment failed. Please try again.");
+        },
+        onClose() {
+            console.log('Khalti checkout closed.');
+        }
+    }
+};
+var khaltiCheckout = new KhaltiCheckout(khaltiConfig);
+document.getElementById("khalti-button").onclick = function () {
+    if(totalAmount > 0){
+        khaltiCheckout.show({ amount: totalAmount * 100 }); // paisa
+    } else {
+        alert("Your cart is empty.");
+    }
+};
+
+// ------------------ eSewa Checkout ------------------
+document.getElementById("esewa-button").onclick = function() {
+    if(totalAmount > 0){
+        // Redirect to eSewa payment URL (example test)
+        const esewaUrl = `https://esewa.com.np/epay/main?amt=${totalAmount}&pid=KarunexOrder01&scd=YOUR_MERCHANT_CODE&su=https://yourwebsite.com/success.html&fu=https://yourwebsite.com/failure.html`;
+        window.location.href = esewaUrl;
+    } else {
+        alert("Your cart is empty.");
+    }
+};
+
+// ------------------ Cash on Delivery ------------------
+document.getElementById("cod-button").onclick = function() {
+    if(totalAmount > 0){
+        alert(`✅ Order placed for Cash on Delivery!\nTotal Amount: NPR ${totalAmount}`);
+        clearCart();
+        window.location.href = "index.html"; // redirect to homepage
+    } else {
+        alert("Your cart is empty.");
+    }
+};
+
+// ------------------ Helper to clear cart ------------------
+function clearCart() {
+    localStorage.removeItem("cart");
+    localStorage.removeItem("total");
+}
