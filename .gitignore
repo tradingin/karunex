@@ -1,0 +1,43 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build Directories
+/dist
+/build
+/out
+
+# Logs
+logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Images (if you want to track only source images)
+/images/placeholder/
+/images/temp/
+
+# System Files
+*.bak
