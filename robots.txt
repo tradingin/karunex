@@ -1,0 +1,229 @@
+# Karunex Co. Pvt. Ltd. - Robots.txt
+# Last updated: November 2024
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /search/
+Disallow: /?s=
+Disallow: /*?*
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+# Crawl-delay for aggressive crawlers
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://www.karunex.com/sitemap.xml
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Bingbot specific rules
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Yandex bot specific rules
+User-agent: YandexBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 2
+
+# Bad bots to block
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Allow image indexing for search engines
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Allow CSS and JS for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+
+# Product pages - allow deep crawling
+Allow: /products/
+Allow: /products/*
+
+# Blog/content pages - allow crawling
+Allow: /blog/
+Allow: /blog/*
+
+# API endpoints - disallow crawling
+Disallow: /api/
+Disallow: /api/*
+Disallow: /ajax/
+Disallow: /ajax/*
+
+# User-specific pages - disallow
+Disallow: /account/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /wishlist/
+
+# Security - disallow sensitive files
+Disallow: /.htaccess
+Disallow: /.htpasswd
+Disallow: /config.ini
+Disallow: /config.php
+Disallow: /database.sql
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /error_log
+
+# Development/staging environments
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /beta/
+
+# Printify integration endpoints
+Disallow: /printify/
+Disallow: /printify/*
+Disallow: /integration/
+Disallow: /integration/*
+
+# Temporary files and caches
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /temp/
+
+# Search results and filters
+Disallow: /search/
+Disallow: /filter/
+Disallow: /*?filter=
+Disallow: /*?sort=
+Disallow: /*?page=
+Disallow: /*&filter=
+Disallow: /*&sort=
+Disallow: /*&page=
+
+# Analytics and tracking parameters
+Disallow: /*?utm_
+Disallow: /*&utm_
+Disallow: /*?gclid=
+Disallow: /*&gclid=
+Disallow: /*?fbclid=
+Disallow: /*&fbclid=
+
+# Print stylesheet
+Allow: /*.css?print
+
+# Mobile specific
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# News specific bot
+User-agent: Googlebot-News
+Allow: /
+
+# Image specific bot
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Video specific bot
+User-agent: Googlebot-Video
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Ads specific bot
+User-agent: Mediapartners-Google
+Allow: /
+
+# Special instructions for archive.org
+User-agent: ia_archiver
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 5
+
+# Special instructions for LinkedIn
+User-agent: LinkedInBot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Special instructions for Facebook
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Special instructions for Twitter
+User-agent: Twitterbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Special instructions for Pinterest
+User-agent: Pinterest
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Rate limiting for all other bots
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 3
+
+# Host directive
+Host: www.karunex.com
+
+# Clean-param directive for tracking parameters
+Clean-param: utm_source / 
+Clean-param: utm_medium /
+Clean-param: utm_campaign /
+Clean-param: utm_term /
+Clean-param: utm_content /
+Clean-param: gclid /
+Clean-param: fbclid /
+Clean-param: ref /
+Clean-param: source /
+Clean-param: campaign /
+
+# End of robots.txt
