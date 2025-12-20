@@ -4417,3 +4417,210 @@ a:hover {
         content: " (" attr(href) ")";
     }
    }
+/* ========== TERMS PAGE SPECIFIC STYLES ========== */
+
+/* Intro Notice */
+.intro-notice {
+    background: #fff3cd;
+    border: 1px solid #ffecb5;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.notice-icon {
+    font-size: 2rem;
+    color: #856404;
+    flex-shrink: 0;
+}
+
+.notice-content h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+    color: #856404;
+}
+
+.notice-content p {
+    color: #856404;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Prohibited Activities Grid */
+.prohibited-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.prohibited-item {
+    background: var(--bg-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border-top: 4px solid var(--error-color);
+    transition: all 0.3s ease;
+}
+
+.prohibited-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
+}
+
+.prohibited-item i {
+    font-size: 2rem;
+    color: var(--error-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.prohibited-item h4 {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-color);
+}
+
+.prohibited-item p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* Acceptance Section */
+.acceptance-section {
+    background: var(--bg-light);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-xl);
+    border-left: 4px solid var(--success-color);
+}
+
+.acceptance-section h3 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color);
+}
+
+.acceptance-section p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Legal Text Enhancements */
+.policy-section ul.legal-list {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+}
+
+.policy-section ul.legal-list li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.policy-section ul.legal-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Highlight Important Text */
+.important-text {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.important-text p {
+    margin: 0;
+    color: #856404;
+    font-weight: 500;
+}
+
+/* Legal Definitions */
+.definition-list {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-lg) 0;
+}
+
+.definition-list dt {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.definition-list dd {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-md);
+}
+
+.definition-list dd:last-child {
+    margin-bottom: 0;
+}
+
+/* Section Navigation */
+.section-nav {
+    position: sticky;
+    top: 100px;
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.section-nav a {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--bg-light);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-xs);
+    transition: all 0.3s ease;
+}
+
+.section-nav a:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Print-Specific Styles for Legal Pages */
+@media print {
+    .intro-notice,
+    .prohibited-grid,
+    .section-nav,
+    .acceptance-section {
+        break-inside: avoid;
+    }
+    
+    .prohibited-item {
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+    
+    .important-text {
+        border: 1px solid #ddd;
+        background: none;
+    }
+   }
