@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services | Karunex Co. Pvt. Ltd. - Custom Printing Solutions</title>
+    <meta name="description" content="Explore Karunex's premium custom printing products including apparel, accessories, promotional items, and home decor. Printify-ready solutions for businesses.">
+    <meta name="keywords" content="custom printing products, apparel, accessories, promotional items, home decor, Printify products">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Products & Services | Karunex Co. Pvt. Ltd.">
+    <meta property="og:description" content="Premium custom printing products and merchandise solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.karunex.com/products.html">
+    <meta property="og:image" content="https://www.karunex.com/images/products/hero-products.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p><i class="fas fa-truck"></i> Free shipping on orders over $100 | <i class="fas fa-headset"></i> 24/7 Customer Support</p>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo/karunex-logo.svg" alt="Karunex Co. Pvt. Ltd. Logo" width="180" height="50">
+                    <span class="logo-text">Karunex Co. Pvt. Ltd.</span>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fas fa-building"></i> About Us</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link active"><i class="fas fa-boxes"></i> Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#apparel">Apparel & Clothing</a>
+                            <a href="#accessories">Accessories</a>
+                            <a href="#promotional">Promotional Items</a>
+                            <a href="#home-decor">Home & Decor</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="contact.html#quote" class="nav-link btn-quote">Get Quote</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" aria-hidden="true">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-building"></i> About Us</a></li>
+                <li><a href="products.html" class="mobile-nav-link active"><i class="fas fa-boxes"></i> Products</a></li>
+                <li><a href="contact.html" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="contact.html#quote" class="mobile-nav-link btn-mobile-quote">Get Free Quote</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" id="main-content">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title animate-fade-in">Our Products & Services</h1>
+                <p class="page-subtitle animate-fade-in delay-1">Premium custom printing solutions for every need</p>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Products</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="products-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h2>Browse by Category</h2>
+                <p class="filter-subtitle">Select a category to explore our products</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Products
+                </button>
+                <button class="filter-btn" data-filter="apparel">
+                    <i class="fas fa-tshirt"></i> Apparel
+                </button>
+                <button class="filter-btn" data-filter="accessories">
+                    <i class="fas fa-gem"></i> Accessories
+                </button>
+                <button class="filter-btn" data-filter="promotional">
+                    <i class="fas fa-gift"></i> Promotional
+                </button>
+                <button class="filter-btn" data-filter="home-decor">
+                    <i class="fas fa-home"></i> Home & Decor
+                </button>
+            </div>
+            
+            <div class="filter-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="product-search" placeholder="Search products...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apparel Section -->
+    <section class="category-section" id="apparel">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="category-title">Apparel & Clothing</h2>
+                <p class="category-description">High-quality custom apparel for businesses, events, and personal use</p>
+            </div>
+            
+            <div class="category-products apparel-products" data-category="apparel">
+                <div class="product-card-large animate-fade-in">
+                    <div class="product-image-large">
+                        <img src="images/products/t-shirt-category.jpg" alt="Custom T-Shirts" loading="lazy">
+                        <span class="category-badge">Most Popular</span>
+                    </div>
+                    <div class="product-details-large">
+                        <h3>Custom T-Shirts</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(1,234 reviews)</span>
+                        </div>
+                        <p class="product-description">Premium quality t-shirts made from 100% combed cotton. Perfect for corporate events, team building, or promotional giveaways. Available in all sizes and colors.</p>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Screen Printing</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>DTG Printing</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Embroidery Available</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>All Sizes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-pricing">
+                            <div class="price-info">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">$12.99</span>
+                                <span class="price-note">per piece (bulk discounts available)</span>
+                            </div>
+                            <div class="price-actions">
+                                <a href="contact.html#quote" class="btn btn-primary">
+                                    <i class="fas fa-shopping-cart"></i> Request Quote
+                                </a>
+                                <a href="#t-shirt-details" class="btn btn-secondary">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid-mini">
+                    <div class="product-mini-card animate-slide-up">
+                        <div class="product-mini-image">
+                            <img src="images/products/hoodie-mini.jpg" alt="Hoodies & Sweatshirts" loading="lazy">
+                        </div>
+                        <div class="product-mini-info">
+                            <h4>Hoodies & Sweatshirts</h4>
+                            <p class="mini-description">Premium hoodies for cooler weather promotions.</p>
+                            <span class="mini-price">From $34.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-mini-card animate-slide-up delay-1">
+                        <div class="product-mini-image">
+                            <img src="images/products/polo-mini.jpg" alt="Polo Shirts" loading="lazy">
+                        </div>
+                        <div class="product-mini-info">
+                            <h4>Polo Shirts</h4>
+                            <p class="mini-description">Professional polo shirts for corporate uniforms.</p>
+                            <span class="mini-price">From $24.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-mini-card animate-slide-up delay-2">
+                        <div class="product-mini-image">
+                            <img src="images/products/jacket-mini.jpg" alt="Jackets & Outerwear" loading="lazy">
+                        </div>
+                        <div class="product-mini-info">
+                            <h4>Jackets & Outerwear</h4>
+                            <p class="mini-description">Custom jackets for teams and events.</p>
+                            <span class="mini-price">From $49.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-mini-card animate-slide-up delay-3">
+                        <div class="product-mini-image">
+                            <img src="images/products/activewear-mini.jpg" alt="Activewear" loading="lazy">
+                        </div>
+                        <div class="product-mini-info">
+                            <h4>Activewear</h4>
+                            <p class="mini-description">Performance wear for sports teams and gyms.</p>
+                            <span class="mini-price">From $29.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="category-section" id="accessories">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="category-title">Accessories</h2>
+                <p class="category-description">Custom accessories that complement any brand or event</p>
+            </div>
+            
+            <div class="category-products accessories-products" data-category="accessories">
+                <div class="product-card-large animate-fade-in">
+                    <div class="product-image-large">
+                        <img src="images/products/bags-category.jpg" alt="Custom Bags & Totes" loading="lazy">
+                        <span class="category-badge">Eco-Friendly</span>
+                    </div>
+                    <div class="product-details-large">
+                        <h3>Custom Bags & Totes</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(876 reviews)</span>
+                        </div>
+                        <p class="product-description">Reusable eco-friendly bags perfect for conferences, trade shows, and retail promotions. Made from durable canvas or recycled materials with vibrant custom printing.</p>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Canvas & Cotton</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Recycled Materials</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Multiple Sizes</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Screen & DTG Printing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-pricing">
+                            <div class="price-info">
+                                <span class="starting-from">Starting from</span>
+                                <span class="price">$9.99</span>
+                                <span class="price-note">per piece (min. order 25 pieces)</span>
+                            </div>
+                            <div class="price-actions">
+                                <a href="contact.html#quote" class="btn btn-primary">
+                                    <i class="fas fa-shopping-cart"></i> Request Quote
+                                </a>
+                                <a href="#bags-details" class="btn btn-secondary">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid-category">
+                    <div class="category-product-card animate-slide-up">
+                        <div class="category-product-image">
+                            <img src="images/products/caps-hats.jpg" alt="Caps & Hats" loading="lazy">
+                        </div>
+                        <div class="category-product-info">
+                            <h4>Caps & Hats</h4>
+                            <p>Custom embroidered caps for teams and promotions</p>
+                            <span class="category-price">From $14.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="category-product-card animate-slide-up delay-1">
+                        <div class="category-product-image">
+                            <img src="images/products/tech-accessories.jpg" alt="Tech Accessories" loading="lazy">
+                        </div>
+                        <div class="category-product-info">
+                            <h4>Tech Accessories</h4>
+                            <p>Custom phone cases, laptop sleeves, and more</p>
+                            <span class="category-price">From $19.99</span>
+                        </div>
+                    </div>
+                    
+                    <div class="category-product-card animate-slide-up delay-2">
+                        <div class="category-product-image">
+                            <img src="images/products/watches.jpg" alt="Watches & Jewelry" loading="lazy">
+                        </div>
+                        <div class="category-product-info">
+                            <h4>Watches & Jewelry</h4>
+                            <p>Branded watches and custom jewelry pieces</p>
+                            <span class="category-price">From $29.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Items Section -->
+    <section class="category-section" id="promotional">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="category-title">Promotional Products</h2>
+                <p class="category-description">Effective marketing tools that leave a lasting impression</p>
+            </div>
+            
+            <div class="category-products promotional-products" data-category="promotional">
+                <div class="promo-grid">
+                    <div class="promo-card animate-fade-in">
+                        <div class="promo-image">
+                            <img src="images/products/promo-pens.jpg" alt="Custom Pens" loading="lazy">
+                        </div>
+                        <div class="promo-content">
+                            <h3>Custom Pens</h3>
+                            <p>High-quality pens with your logo for everyday brand exposure.</p>
+                            <div class="promo-price">
+                                <span>From $2.99</span>
+                                <span class="promo-bulk">Bulk discounts available</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card animate-fade-in delay-1">
+                        <div class="promo-image">
+                            <img src="images/products/notebooks.jpg" alt="Custom Notebooks" loading="lazy">
+                        </div>
+                        <div class="promo-content">
+                            <h3>Custom Notebooks</h3>
+                            <p>Premium notebooks for corporate gifts and events.</p>
+                            <div class="promo-price">
+                                <span>From $8.99</span>
+                                <span class="promo-bulk">Min. order 50 units</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card animate-fade-in delay-2">
+                        <div class="promo-image">
+                            <img src="images/products/drinkware.jpg" alt="Custom Drinkware" loading="lazy">
+                        </div>
+                        <div class="promo-content">
+                            <h3>Custom Drinkware</h3>
+                            <p>Mugs, tumblers, and water bottles with your branding.</p>
+                            <div class="promo-price">
+                                <span>From $7.99</span>
+                                <span class="promo-bulk">Great for corporate gifts</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-card animate-fade-in delay-3">
+                        <div class="promo-image">
+                            <img src="images/products/usb-drives.jpg" alt="Custom USB Drives" loading="lazy">
+                        </div>
+                        <div class="promo-content">
+                            <h3>Custom USB Drives</h3>
+                            <p>Pre-loaded or empty USB drives with your branding.</p>
+                            <div class="promo-price">
+                                <span>From $12.99</span>
+                                <span class="promo-bulk">Various capacities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="promo-features">
+                    <div class="promo-feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h4>Fast Turnaround</h4>
+                        <p>Most promotional items ship within 5-7 business days</p>
+                    </div>
+                    <div class="promo-feature">
+                        <i class="fas fa-tags"></i>
+                        <h4>Bulk Discounts</h4>
+                        <p>Significant savings on orders of 100+ units</p>
+                    </div>
+                    <div class="promo-feature">
+                        <i class="fas fa-palette"></i>
+                        <h4>Custom Design</h4>
+                        <p>Free design assistance for your promotional items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home & Decor Section -->
+    <section class="category-section" id="home-decor">
+        <div class="container">
+            <div class="category-header">
+                <h2 class="category-title">Home & Decor</h2>
+                <p class="category-description">Beautiful custom items for home, office, and retail spaces</p>
+            </div>
+            
+            <div class="category-products home-decor-products" data-category="home-decor">
+                <div class="decor-showcase">
+                    <div class="decor-main animate-slide-left">
+                        <div class="decor-image">
+                            <img src="images/products/wall-art-main.jpg" alt="Custom Wall Art" loading="lazy">
+                        </div>
+                        <div class="decor-details">
+                            <h3>Custom Wall Art</h3>
+                            <p>Transform any space with custom printed wall art, canvas prints, and posters. Perfect for offices, retail spaces, or personal use.</p>
+                            <ul class="decor-options">
+                                <li><i class="fas fa-check"></i> Canvas Prints</li>
+                                <li><i class="fas fa-check"></i> Framed Posters</li>
+                                <li><i class="fas fa-check"></i> Metal Prints</li>
+                                <li><i class="fas fa-check"></i> Acrylic Prints</li>
+                            </ul>
+                            <div class="decor-price">
+                                <span>Starting from $39.99</span>
+                                <a href="contact.html#quote" class="btn btn-small">Get Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="decor-grid animate-slide-right">
+                        <div class="decor-item">
+                            <div class="decor-item-image">
+                                <img src="images/products/cushions.jpg" alt="Custom Cushions" loading="lazy">
+                            </div>
+                            <h4>Custom Cushions</h4>
+                            <p>Personalized cushions for home or office</p>
+                            <span class="decor-item-price">From $24.99</span>
+                        </div>
+                        
+                        <div class="decor-item">
+                            <div class="decor-item-image">
+                                <img src="images/products/blankets.jpg" alt="Custom Blankets" loading="lazy">
+                            </div>
+                            <h4>Custom Blankets</h4>
+                            <p>Soft throws and blankets with custom prints</p>
+                            <span class="decor-item-price">From $34.99</span>
+                        </div>
+                        
+                        <div class="decor-item">
+                            <div class="decor-item-image">
+                                <img src="images/products/coasters.jpg" alt="Custom Coasters" loading="lazy">
+                            </div>
+                            <h4>Custom Coasters</h4>
+                            <p>Set of custom designed coasters</p>
+                            <span class="decor-item-price">From $19.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Order Benefits -->
+    <section class="bulk-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bulk Order Benefits</h2>
+                <p class="section-subtitle">Special advantages for large volume orders</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Volume Discounts</h3>
+                    <p>Save up to 40% on orders of 100+ units with our tiered pricing structure.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Priority Production</h3>
+                    <p>Faster turnaround times for bulk orders with dedicated production lines.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping on all bulk orders over $500 within the continental US.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Free Design Service</h3>
+                    <p>Complimentary design assistance for bulk orders with multiple design revisions.</p>
+                </div>
+            </div>
+            
+            <div class="bulk-order-cta">
+                <a href="contact.html#quote" class="btn btn-primary btn-large">
+                    <i class="fas fa-calculator"></i> Get Bulk Quote
+                </a>
+                <p class="bulk-note">Contact us for custom pricing on orders of 500+ units</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Customization -->
+    <section class="customization-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Customization Options</h2>
+                <p class="section-subtitle">Multiple ways to personalize your products</p>
+            </div>
+            
+            <div class="customization-options">
+                <div class="customization-tabs">
+                    <button class="customization-tab active" data-tab="printing">
+                        <i class="fas fa-print"></i> Printing Methods
+                    </button>
+                    <button class="customization-tab" data-tab="materials">
+                        <i class="fas fa-leaf"></i> Materials
+                    </button>
+                    <button class="customization-tab" data-tab="finishing">
+                        <i class="fas fa-paint-brush"></i> Finishing Options
+                    </button>
+                </div>
+                
+                <div class="customization-content">
+                    <div class="customization-pane active" id="printing-pane">
+                        <div class="pane-content">
+                            <h3>Advanced Printing Technologies</h3>
+                            <p>We offer multiple printing methods to suit different products and budget requirements:</p>
+                            
+                            <div class="printing-methods">
+                                <div class="method">
+                                    <h4>Screen Printing</h4>
+                                    <p>Ideal for bulk orders, provides vibrant colors and excellent durability.</p>
+                                    <span class="method-best">Best for: 50+ units</span>
+                                </div>
+                                
+                                <div class="method">
+                                    <h4>DTG Printing</h4>
+                                    <p>Direct-to-garment printing for detailed, full-color designs on any quantity.</p>
+                                    <span class="method-best">Best for: 1-49 units</span>
+                                </div>
+                                
+                                <div class="method">
+                                    <h4>Embroidery</h4>
+                                    <p>Premium option for logos and text on hats, polos, and jackets.</p>
+                                    <span class="method-best">Best for: Professional wear</span>
+                                </div>
+                                
+                                <div class="method">
+                                    <h4>Sublimation</h4>
+                                    <p>Creates vibrant, all-over prints that won't crack or fade.</p>
+                                    <span class="method-best">Best for: Performance wear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="customization-pane" id="materials-pane">
+                        <div class="pane-content">
+                            <h3>Premium Materials Selection</h3>
+                            <p>Choose from our range of high-quality materials:</p>
+                            
+                            <div class="materials-list">
+                                <div class="material">
+                                    <h4>100% Combed Cotton</h4>
+                                    <p>Soft, durable, and perfect for everyday wear.</p>
+                                </div>
+                                
+                                <div class="material">
+                                    <h4>Organic Cotton</h4>
+                                    <p>Eco-friendly option for sustainable products.</p>
+                                </div>
+                                
+                                <div class="material">
+                                    <h4>Polyester Blends</h4>
+                                    <p>Moisture-wicking fabrics for performance wear.</p>
+                                </div>
+                                
+                                <div class="material">
+                                    <h4>Recycled Materials</h4>
+                                    <p>Environmentally conscious options available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Printify Integration on Products Page -->
+    <section class="printify-products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Printify-Ready Products</h2>
+                <p class="section-subtitle">Seamless integration for automated production</p>
+            </div>
+            
+            <div class="printify-products-info">
+                <div class="printify-products-text">
+                    <h3>Automated Production Workflow</h3>
+                    <p>All our products are Printify-integration ready, allowing for:</p>
+                    
+                    <ul class="printify-benefits">
+                        <li><i class="fas fa-sync-alt"></i> <strong>Real-time Inventory Sync:</strong> Automatic stock updates across all platforms</li>
+                        <li><i class="fas fa-robot"></i> <strong>Automated Order Processing:</strong> Orders automatically sent to production</li>
+                        <li><i class="fas fa-globe"></i> <strong>Global Fulfillment Network:</strong> Printify's worldwide production partners</li>
+                        <li><i class="fas fa-shipping-fast"></i> <strong>Automatic Shipping:</strong> Calculated shipping rates and tracking</li>
+                    </ul>
+                    
+                    <div class="printify-ready-badge">
+                        <i class="fas fa-plug"></i>
+                        <span>Printify Integration Ready</span>
+                    </div>
+                </div>
+                
+                <div class="printify-products-visual">
+                    <img src="images/products/printify-workflow.svg" alt="Printify Workflow" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our products and services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the minimum order quantity?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our minimum order quantity varies by product. For custom t-shirts, the minimum is 12 pieces. For promotional items like pens and notebooks, the minimum is 50 units. However, we can accommodate smaller orders for some products - please contact us for details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does production take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard production time is 7-10 business days after final design approval. Rush production (3-5 business days) is available for an additional fee. Bulk orders (100+ units) may require 10-14 business days.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer design services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer complimentary basic design services for all orders. For complex designs or branding packages, we have professional designers available at competitive rates. Contact us to discuss your design needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What file formats do you accept for designs?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept AI, EPS, PDF, PSD, JPG, and PNG files. For best results, vector files (AI, EPS) are recommended. Our design team can help convert your files if needed.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have more questions? <a href="contact.html">Contact our sales team</a> for personalized assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Order Custom Products?</h2>
+                <p class="cta-subtitle">Get started with a free quote and design consultation</p>
+                
+                <div class="cta-buttons">
+                    <a href="contact.html#quote" class="btn btn-primary btn-large">
+                        <i class="fas fa-comment-dollar"></i> Get Free Quote
+                    </a>
+                    <a href="tel:+15551234567" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No minimum order required for quotes</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free design assistance included</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Fast 24-hour quote response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo/karunex-logo-white.svg" alt="Karunex Logo" width="150" height="40">
+                    </div>
+                    <p class="footer-description">Karunex Co. Pvt. Ltd. provides premium custom printing and merchandise solutions with cutting-edge technology and exceptional service.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="contact.html#quote"><i class="fas fa-chevron-right"></i> Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Our Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#apparel"><i class="fas fa-chevron-right"></i> Custom Apparel</a></li>
+                        <li><a href="#accessories"><i class="fas fa-chevron-right"></i> Accessories</a></li>
+                        <li><a href="#promotional"><i class="fas fa-chevron-right"></i> Promotional Items</a></li>
+                        <li><a href="#home-decor"><i class="fas fa-chevron-right"></i> Home & Decor</a></li>
+                        <li><a href="#printify-integration"><i class="fas fa-chevron-right"></i> Printify Integration</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>123 Business Avenue</p>
+                                <p>Suite 456, New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                                <p>Mon-Fri: 9AM-6PM EST</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p><a href="mailto:info@karunex.com">info@karunex.com</a></p>
+                                <p><a href="mailto:sales@karunex.com">sales@karunex.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Signup -->
+                    <div class="newsletter">
+                        <h4>Stay Updated</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-small"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; <span id="current-year"></span> Karunex Co. Pvt. Ltd. All rights reserved.</p>
+                    
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="sitemap.xml">Sitemap</a>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-amex" title="American Express"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                    <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+    <script src="js/products.js" defer></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Products & Services | Karunex Co. Pvt. Ltd.",
+        "description": "Custom printing products including apparel, accessories, promotional items, and home decor",
+        "about": {
+            "@type": "Product",
+            "name": "Custom Printing Products",
+            "category": "Printing Services"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "position": 1,
+                    "name": "Custom T-Shirts",
+                    "description": "Premium quality custom t-shirts for businesses and events",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "12.99",
+                        "priceCurrency": "USD"
+                    }
+                },
+                {
+                    "@type": "Product",
+                    "position": 2,
+                    "name": "Custom Bags & Totes",
+                    "description": "Eco-friendly custom bags for promotions and retail",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "9.99",
+                        "priceCurrency": "USD"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
