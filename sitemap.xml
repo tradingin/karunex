@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    
+    <!-- 
+        Karunex Co. Pvt. Ltd. Sitemap
+        Generated: November 2024
+        Last updated: November 2024
+    -->
+    
+    <!-- Homepage - Highest Priority -->
+    <url>
+        <loc>https://www.karunex.com/</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.karunex.com/"/>
+        
+        <!-- Homepage Images -->
+        <image:image>
+            <image:loc>https://www.karunex.com/images/logo/karunex-logo.svg</image:loc>
+            <image:title>Karunex Co. Pvt. Ltd. Logo</image:title>
+            <image:caption>Premium custom printing solutions</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/hero-products.png</image:loc>
+            <image:title>Custom Printing Products</image:title>
+            <image:caption>High-quality custom printing products</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- About Us Page -->
+    <url>
+        <loc>https://www.karunex.com/about.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/about.html"/>
+        
+        <!-- About Page Images -->
+        <image:image>
+            <image:loc>https://www.karunex.com/images/about/company-story.jpg</image:loc>
+            <image:title>Karunex Company History</image:title>
+            <image:caption>Our journey and growth story</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/team/ceo.jpg</image:loc>
+            <image:title>Karunex Leadership Team</image:title>
+            <image:caption>Meet our experienced leadership team</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Products Page -->
+    <url>
+        <loc>https://www.karunex.com/products.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/products.html"/>
+        
+        <!-- Product Categories -->
+        <xhtml:link rel="subsection" href="https://www.karunex.com/products.html#apparel"/>
+        <xhtml:link rel="subsection" href="https://www.karunex.com/products.html#accessories"/>
+        <xhtml:link rel="subsection" href="https://www.karunex.com/products.html#promotional"/>
+        <xhtml:link rel="subsection" href="https://www.karunex.com/products.html#home-decor"/>
+        
+        <!-- Product Images -->
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/t-shirt-category.jpg</image:loc>
+            <image:title>Custom T-Shirts</image:title>
+            <image:caption>Premium quality custom t-shirts</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/bags-category.jpg</image:loc>
+            <image:title>Custom Bags & Totes</image:title>
+            <image:caption>Eco-friendly custom bags</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/promo-pens.jpg</image:loc>
+            <image:title>Promotional Products</image:title>
+            <image:caption>Custom promotional items</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/wall-art-main.jpg</image:loc>
+            <image:title>Home & Decor</image:title>
+            <image:caption>Custom home decor items</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.karunex.com/contact.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/contact.html"/>
+        
+        <!-- Contact Sections -->
+        <xhtml:link rel="subsection" href="https://www.karunex.com/contact.html#quote"/>
+        <xhtml:link rel="subsection" href="https://www.karunex.com/contact.html#integration"/>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://www.karunex.com/privacy-policy.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/privacy-policy.html"/>
+    </url>
+    
+    <!-- Terms of Service -->
+    <url>
+        <loc>https://www.karunex.com/terms-of-service.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/terms-of-service.html"/>
+    </url>
+    
+    <!-- Product Category: Apparel -->
+    <url>
+        <loc>https://www.karunex.com/products.html#apparel</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/products.html#apparel"/>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/featured-t-shirt.jpg</image:loc>
+            <image:title>Custom T-Shirts Collection</image:title>
+            <image:caption>Browse our t-shirt collection</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/featured-hoodie.jpg</image:loc>
+            <image:title>Custom Hoodies</image:title>
+            <image:caption>Premium quality hoodies</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Product Category: Accessories -->
+    <url>
+        <loc>https://www.karunex.com/products.html#accessories</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/products.html#accessories"/>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/featured-tote.jpg</image:loc>
+            <image:title>Custom Tote Bags</image:title>
+            <image:caption>Eco-friendly tote bags</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/caps-hats.jpg</image:loc>
+            <image:title>Custom Caps & Hats</image:title>
+            <image:caption>Embroidered caps and hats</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Product Category: Promotional -->
+    <url>
+        <loc>https://www.karunex.com/products.html#promotional</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/products.html#promotional"/>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/featured-mug.jpg</image:loc>
+            <image:title>Custom Mugs</image:title>
+            <image:caption>Personalized coffee mugs</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/notebooks.jpg</image:loc>
+            <image:title>Custom Notebooks</image:title>
+            <image:caption>Branded notebooks</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Product Category: Home & Decor -->
+    <url>
+        <loc>https://www.karunex.com/products.html#home-decor</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/products.html#home-decor"/>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/cushions.jpg</image:loc>
+            <image:title>Custom Cushions</image:title>
+            <image:caption>Personalized cushions</image:caption>
+        </image:image>
+        
+        <image:image>
+            <image:loc>https://www.karunex.com/images/products/coasters.jpg</image:loc>
+            <image:title>Custom Coasters</image:title>
+            <image:caption>Branded coasters</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Quote Calculator -->
+    <url>
+        <loc>https://www.karunex.com/contact.html#quote</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/contact.html#quote"/>
+    </url>
+    
+    <!-- Printify Integration -->
+    <url>
+        <loc>https://www.karunex.com/contact.html#integration</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="canonical" href="https://www.karunex.com/contact.html#integration"/>
+    </url>
+    
+    <!-- Printify Integration Page (Future) -->
+    <url>
+        <loc>https://www.karunex.com/printify-integration.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/printify-integration.html"/>
+    </url>
+    
+    <!-- Blog Index (Future) -->
+    <url>
+        <loc>https://www.karunex.com/blog/</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/blog/"/>
+    </url>
+    
+    <!-- FAQ Page (Future) -->
+    <url>
+        <loc>https://www.karunex.com/faq.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/faq.html"/>
+    </url>
+    
+    <!-- Shipping Policy (Future) -->
+    <url>
+        <loc>https://www.karunex.com/shipping-policy.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/shipping-policy.html"/>
+    </url>
+    
+    <!-- Return Policy (Future) -->
+    <url>
+        <loc>https://www.karunex.com/return-policy.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/return-policy.html"/>
+    </url>
+    
+    <!-- Cookie Policy (Future) -->
+    <url>
+        <loc>https://www.karunex.com/cookie-policy.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/cookie-policy.html"/>
+    </url>
+    
+    <!-- Design Services (Future) -->
+    <url>
+        <loc>https://www.karunex.com/design-services.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/design-services.html"/>
+    </url>
+    
+    <!-- Bulk Orders (Future) -->
+    <url>
+        <loc>https://www.karunex.com/bulk-orders.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/bulk-orders.html"/>
+    </url>
+    
+    <!-- Custom Solutions (Future) -->
+    <url>
+        <loc>https://www.karunex.com/custom-solutions.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/custom-solutions.html"/>
+    </url>
+    
+    <!-- Sustainability (Future) -->
+    <url>
+        <loc>https://www.karunex.com/sustainability.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/sustainability.html"/>
+    </url>
+    
+    <!-- Quality Assurance (Future) -->
+    <url>
+        <loc>https://www.karunex.com/quality-assurance.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/quality-assurance.html"/>
+    </url>
+    
+    <!-- Partner Program (Future) -->
+    <url>
+        <loc>https://www.karunex.com/partners.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/partners.html"/>
+    </url>
+    
+    <!-- Careers (Future) -->
+    <url>
+        <loc>https://www.karunex.com/careers.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/careers.html"/>
+    </url>
+    
+    <!-- Press (Future) -->
+    <url>
+        <loc>https://www.karunex.com/press.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/press.html"/>
+    </url>
+    
+    <!-- Events (Future) -->
+    <url>
+        <loc>https://www.karunex.com/events.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/events.html"/>
+    </url>
+    
+    <!-- Case Studies (Future) -->
+    <url>
+        <loc>https://www.karunex.com/case-studies.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/case-studies.html"/>
+    </url>
+    
+    <!-- Testimonials (Future) -->
+    <url>
+        <loc>https://www.karunex.com/testimonials.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/testimonials.html"/>
+    </url>
+    
+    <!-- Portfolio (Future) -->
+    <url>
+        <loc>https://www.karunex.com/portfolio.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/portfolio.html"/>
+    </url>
+    
+    <!-- Gallery (Future) -->
+    <url>
+        <loc>https://www.karunex.com/gallery.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/gallery.html"/>
+    </url>
+    
+    <!-- Resources (Future) -->
+    <url>
+        <loc>https://www.karunex.com/resources.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/resources.html"/>
+    </url>
+    
+    <!-- Support (Future) -->
+    <url>
+        <loc>https://www.karunex.com/support.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/support.html"/>
+    </url>
+    
+    <!-- Contact Support (Future) -->
+    <url>
+        <loc>https://www.karunex.com/contact-support.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/contact-support.html"/>
+    </url>
+    
+    <!-- API Documentation (Future - Printify Integration) -->
+    <url>
+        <loc>https://www.karunex.com/api-docs.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/api-docs.html"/>
+    </url>
+    
+    <!-- Developer Portal (Future) -->
+    <url>
+        <loc>https://www.karunex.com/developers.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/developers.html"/>
+    </url>
+    
+    <!-- Status Page (Future) -->
+    <url>
+        <loc>https://www.karunex.com/status.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.karunex.com/status.html"/>
+    </url>
+    
+    <!-- Sitemap Index (Future) -->
+    <url>
+        <loc>https://www.karunex.com/sitemap-index.xml</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+    
+    <!-- RSS Feed (Future) -->
+    <url>
+        <loc>https://www.karunex.com/feed.xml</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- JSON-LD Structured Data (Future) -->
+    <url>
+        <loc>https://www.karunex.com/structured-data.json</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- Manifest File (Future - PWA) -->
+    <url>
+        <loc>https://www.karunex.com/manifest.json</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- Service Worker (Future - PWA) -->
+    <url>
+        <loc>https://www.karunex.com/sw.js</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- 404 Page -->
+    <url>
+        <loc>https://www.karunex.com/404.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- Maintenance Page -->
+    <url>
+        <loc>https://www.karunex.com/maintenance.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+    <!-- Coming Soon Page -->
+    <url>
+        <loc>https://www.karunex.com/coming-soon.html</loc>
+        <lastmod>2024-11-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+    
+</urlset>
